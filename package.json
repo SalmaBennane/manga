@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@fortawesome/free-brands-svg-icons": "^6.4.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.1"
+  }
+}

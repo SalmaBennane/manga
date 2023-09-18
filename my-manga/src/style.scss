@@ -1,0 +1,315 @@
+.app {
+  display: flex;
+  justify-content: center;
+  .container {
+    width: 1024px;
+
+    .auth {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: rgb(149, 0, 255);
+
+      h1 {
+        font: size 20px;
+        color: rgb(77, 2, 130);
+        margin-bottom: 20px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        background-color: white;
+        width: 200px;
+        gap: 20px;
+
+        input {
+          padding: 10px;
+          border: none;
+          border-bottom: 1px solid gray;
+        }
+        button {
+          padding: 10px;
+          border: none;
+          background-color: rgb(77, 2, 130);
+          color: white;
+          cursor: pointer;
+        }
+
+        p {
+          font-size: 12px;
+          color: red;
+          text-align: center;
+        }
+
+        span {
+          font-size: 12px;
+          text-align: center;
+        }
+      }
+    }
+
+    //NAVBAR
+
+    .navbar {
+      padding: 20px 0;
+
+      .container {
+        padding: 10px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .logo {
+          font-family: "Dancing Script", cursive;
+          color: rgb(74, 25, 133);
+          font-size: 30px;
+          margin-bottom: 60px;
+          cursor: pointer;
+          span {
+            color: rgb(174, 0, 255);
+          }
+        }
+        .search {
+          position: relative;
+          display: flex;
+          align-items: center;
+          margin-bottom: 60px;
+
+          .search-icon {
+            font-size: 1.2rem;
+            color: gray;
+            margin-right: 0.5rem;
+          }
+
+          input {
+            padding: 10px;
+            border: none;
+            border-bottom: 1px solid gray;
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+    footer {
+      background-color: #e4d4f2;
+      padding: 20px;
+      margin-top: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .logo {
+        font-family: "Dancing Script", cursive;
+        color: rgb(74, 25, 133);
+        font-size: 30px;
+        span {
+          color: rgb(174, 0, 255);
+        }
+        h6 {
+          margin: 10px 0;
+          font-size: 12px;
+          color: black;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+      }
+      .social-media {
+        a {
+          color: black;
+          font-size: 25px;
+          margin-right: 20px;
+          transition: color 0.3s ease-in-out;
+
+          &:hover {
+            color: #6a00ff;
+          }
+        }
+      }
+      .about {
+        a {
+          color: black;
+          text-decoration: none;
+          font-size: 16px;
+          transition: color 0.3s ease-in-out;
+          font-family: Arial, Helvetica, sans-serif;
+
+          &:hover {
+            color: #9218e3;
+          }
+        }
+      }
+    }
+    .Home {
+      .container {
+        display: flex;
+        align-items: flex-start;
+
+        .notifications {
+          width: 20%;
+          padding: 20px;
+          background-color: #f8f8f8;
+          position: sticky;
+          top: 0;
+        }
+
+        .posts {
+          .homepage-image-container {
+            position: relative;
+            .homepage-image {
+              width: 103vh;
+              height: 93vh;
+            }
+            .background-text {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              text-align: center;
+              color: white;
+              font-family: "Dancing Script", cursive;
+              font-size: 40px;
+            }
+            .background-text span {
+              color: rgb(174, 0, 255);
+            }
+
+            .background-text p {
+              font-size: 18px;
+            }
+          }
+          .posts-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            .Post {
+              border: 1px solid #ccc;
+              padding: 20px;
+              text-align: center;
+              background-color: #f9f9f9;
+              transition: transform 0.2s ease-in-out;
+
+              &:hover {
+                transform: scale(1.05);
+              }
+
+              .post-image-container {
+                width: 200px;
+                height: 250px;
+
+                .post-image {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                }
+              }
+
+              .post-title {
+                font-size: 18px;
+                margin-top: 10px;
+              }
+
+              .post-footer {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 12px;
+                margin-top: 10px;
+
+                .post-content-item {
+                  display: flex;
+                  justify-content: space-between;
+                  font-weight: bold;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .Single {
+      flex-direction: column;
+      .title-single {
+        font-size: 30px;
+        font-weight: bold;
+        margin-top: 10px;
+        padding-left: 30px;
+        color: #6a00ff;
+      }
+
+      .post-info {
+        display: flex;
+        padding: 20px;
+        gap: 32px;
+
+        .manga-info {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          background-color: rgb(240, 239, 239);
+          padding: 20px;
+          width: 200px;
+          span {
+            font-size: 14px;
+          }
+
+          .post-content-item {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+          }
+        }
+
+        .post-image-container {
+          width: 200px;
+
+          .post-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+          }
+        }
+      }
+      .chapters {
+        padding-left: 30px;
+
+        .chapters-title {
+          font-size: 30px;
+          font-weight: bold;
+          margin-bottom: 10px;
+          color: #6a00ff;
+        }
+
+        .ch {
+          font-weight: lighter;
+          font-size: 20px;
+          padding: 20px;
+          font-family: "Lucida Console", "Courier New", monospace;
+          .chapter-item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+            color: #020005;
+          }
+        }
+      }
+    }
+    .chapter {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .ch-titre {
+        font-size: 24px;
+        margin: 10px 0;
+        color: #6a00ff;
+      }
+      .ch-image {
+        max-width: 100%;
+        height: auto;
+        margin-top: 10px;
+      }
+    }
+  }
+}
